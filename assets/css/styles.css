@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: hsl(47, 88%, 63%);
+    display: flex;                /* Añade Flexbox */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    max-width: 500px;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 50%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 1);
+    padding: 1.1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+picture img{
+    width: 100%;
+    border-radius: 10px;   
+}
+
+article{
+    margin-top: 0.5rem;
+}   
+
+button{
+    width: 30%;
+    font-size: 0.75rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 1rem 0;
+}
+
+span{
+    font-size: 0.75rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 700;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+h2{
+    font-size: 1rem;
+    color: hsl(227, 12%, 13%);
+    margin-bottom: 0.5rem;
+}
+
+.card-description{
+    font-size: 0.75rem;
+    color: hsl(227, 10%, 46%);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    word-spacing: 0.1rem;
+}
+
+.card-author{
+    display: flex;
+    align-items: flex-end; /* Cambia de center a baseline */
+    gap: 0.5rem;
+}
+
+.avatar-author img {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name{
+    font-size: 0.75rem;
+    color: hsl(227, 12%, 13%);
+    font-weight: 900;
+    margin: 0.2rem;
+}
+
+footer{
+    width: 100%;
+    height: 3rem;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 300px){
+    body{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    main{
+        max-width: 100%;
+    }
+
+    section{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    button{
+        width: 50%;
+    }
+}
